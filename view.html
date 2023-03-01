@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/view.css">
+</head>
+<body onload="pokedata()">
+  <h1>PokeDex</h1>
+ <div class="container">
+  <img id="sprite" width="100px"/>
+
+  <h4 id="name"></h4>
+  
+  <label id="n"><strong>Nro Pokedex:</strong> <span id="numero"></span></label> <br />
+  <h5>Tipos:</h5>
+  <ul id="tipos">
+    
+  </ul>
+  <div id="imagenes">
+    <div id="male">
+      <h5>Macho</h5>
+      <img id="front-male">
+      <img id="back-male">
+    </div>
+    <div id="female">
+      <h5>Hembra</h5>
+      <img id="front-female">
+      <img id="back-female">
+    </div>
+    <div id="shiny-male">
+      <h5>Shiny Macho</h5>
+      <img id="front-smale">
+      <img id="back-smale">
+    </div>
+    <div id="shiny-female">
+      <h5>Shiny Hembra</h5>
+      <img id="front-sfemale">
+      <img id="back-sfemale">
+    </div>
+  </div>
+  <h5>Peso: <span id="peso"></span> kg</h5>
+  <h5>Altura: <span id="alto"></span> m</h5>
+  <h5>Estadisticas:</h5>
+  <ul id="stats">
+
+  </ul>
+
+  <a href="index.html?gen=1">Volver</a>
+  </div>
+  <script src="./js/libs/axios.min.js"></script>
+  <script src="./js/view.js"></script>
+</body>
+</html>
